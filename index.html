@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future IT Core</title>
+    <meta name="description" content="Future IT Core - Premier Computer Education Institute offering courses in Basic Computer, MS Office, Typing, Tally Prime, Web Designing, DTP, Graphic Designing, and Ethical Hacking. Admissions Opening Soon!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcement-bar">
+        <div class="announcement-content">
+            <span>ADMISSIONS OPENING SOON! &nbsp;|&nbsp; सीखें आज, बढ़ें कल! &nbsp;|&nbsp; Learn Today, Achieve Tomorrow!</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-future">FUTURE</span>
+                <span class="logo-it">IT</span>
+                <span class="logo-core">CORE</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#ethical-hacking" class="nav-link">Ethical Hacking</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="nav-cta">Enroll Now</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/hero-classroom.png" alt="Students working on computers" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line1">Empowering</span>
+                <span class="title-line2"><em>Future</em> Learning</span>
+            </h1>
+            <div class="hero-tagline">सीखें आज, बढ़ें कल! — Learn Today, Lead Tomorrow</div>
+            <div class="hero-cta-group">
+                <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+            <div class="hero-location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Madhotanda, Near HP Petrol Pump
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Soon Banner -->
+    <section class="opening-soon" id="opening-soon">
+        <div class="opening-soon-bg">
+            <div class="particle" style="--delay: 0s; --x: 10%; --y: 20%;"></div>
+            <div class="particle" style="--delay: 1s; --x: 25%; --y: 60%;"></div>
+            <div class="particle" style="--delay: 2s; --x: 50%; --y: 30%;"></div>
+            <div class="particle" style="--delay: 3s; --x: 75%; --y: 70%;"></div>
+            <div class="particle" style="--delay: 4s; --x: 90%; --y: 40%;"></div>
+            <div class="particle" style="--delay: 0.5s; --x: 35%; --y: 80%;"></div>
+            <div class="particle" style="--delay: 1.5s; --x: 60%; --y: 15%;"></div>
+            <div class="particle" style="--delay: 2.5s; --x: 80%; --y: 55%;"></div>
+        </div>
+        <div class="container">
+            <div class="opening-badge">जल्द ही शुभारंभ</div>
+            <h2 class="opening-title">
+                <span class="opening-line1">ADMISSIONS</span>
+                <span class="opening-line2">OPENING SOON</span>
+            </h2>
+            <p class="opening-text">अभी प्रवेश शुरू होने वाले हैं! — Secure Your Seat Now!</p>
+            <div class="countdown-wrapper">
+                <div class="countdown-label">Get Ready For</div>
+                <div class="countdown-items">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">--</span>
+                        <span class="countdown-unit">Days</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">--</span>
+                        <span class="countdown-unit">Hours</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">--</span>
+                        <span class="countdown-unit">Mins</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">--</span>
+                        <span class="countdown-unit">Secs</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact" class="btn btn-glow">Pre-Register Now</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">हमारे कोर्स | Our Courses</span>
+                <h2 class="section-title">Comprehensive <span class="highlight">IT Training</span></h2>
+                <p class="section-desc">Master the skills that industry demands. From basics to advanced — we've got you covered.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up">
+                    <div class="course-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3 class="course-name">Basic Computer</h3>
+                    <p class="course-hindi">बेसिक कंप्यूटर</p>
+                    <p class="course-desc">Foundation course covering computer fundamentals, operating systems, and essential digital literacy.</p>
+                    <div class="course-tag">Beginner</div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h3 class="course-name">MS Office</h3>
+                    <p class="course-hindi">एम.एस. ऑफिस</p>
+                    <p class="course-desc">Complete MS Office suite — Word, Excel, PowerPoint. Essential for every professional.</p>
+                    <div class="course-tag">Professional</div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+                    </div>
+                    <h3 class="course-name">Typing Hindi & English</h3>
+                    <p class="course-hindi">हिंदी एवं अंग्रेजी टाइपिंग</p>
+                    <p class="course-desc">Professional typing skills in both Hindi and English with speed and accuracy training.</p>
+                    <div class="course-tag">Essential</div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3 class="course-name">Internet & E-Mail</h3>
+                    <p class="course-hindi">इंटरनेट एवं ई-मेल</p>
+                    <p class="course-desc">Web browsing, email management, online safety, and effective internet usage skills.</p>
+                    <div class="course-tag">Essential</div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="course-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="7" x2="22" y2="7"/><line x1="7" y1="3" x2="7" y2="7"/><path d="M7 12h3v3H7z"/><path d="M14 12h3v3h-3z"/></svg>
+                    </div>
+                    <h3 class="course-name">Tally Prime</h3>
+                    <p class="course-hindi">टैली प्राइम</p>
+                    <p class="course-desc">Master accounting software with GST, inventory management, and financial reporting.</p>
+                    <div class="course-tag">Accounting</div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="course-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                    </div>
+                    <h3 class="course-name">Web Designing</h3>
+                    <p class="course-hindi">वेब डिज़ाइनिंग</p>
+                    <p class="course-desc">HTML, CSS, JavaScript & modern web technologies. Build stunning websites from scratch.</p>
+                    <div class="course-tag">Creative</div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="course-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <h3 class="course-name">DTP & Graphic Designing</h3>
+                    <p class="course-hindi">डीटीपी एवं ग्राफिक डिज़ाइनिंग</p>
+                    <p class="course-desc">Desktop Publishing, Photoshop, CorelDRAW, and visual design for print & digital media.</p>
+                    <div class="course-tag">Creative</div>
+                </div>
+
+                <div class="course-card course-card-highlight" data-aos="fade-up" data-aos-delay="700">
+                    <div class="course-featured-badge">⭐ FEATURED</div>
+                    <div class="course-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="course-name">Ethical Hacking</h3>
+                    <p class="course-hindi">एथिकल हैकिंग</p>
+                    <p class="course-desc">Cybersecurity & penetration testing. Learn to protect. Secure the future.</p>
+                    <div class="course-tag course-tag-special">Advanced</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethical Hacking Highlight Section -->
+    <section class="ethical-hacking" id="ethical-hacking">
+        <div class="hacking-bg-effects">
+            <div class="matrix-rain" id="matrix-rain"></div>
+            <div class="cyber-grid"></div>
+        </div>
+        <div class="container">
+            <div class="hacking-content">
+                <div class="hacking-text">
+                    <span class="hacking-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Cybersecurity Course
+                    </span>
+                    <h2 class="hacking-title">
+                        एथिकल हैकिंग सीखें<br>
+                        <span class="glow-text">ETHICAL HACKING</span>
+                    </h2>
+                    <p class="hacking-subtitle">साइबर सुरक्षा के विशेषज्ञ बनें!</p>
+                    <p class="hacking-desc">Become a cybersecurity expert. Learn penetration testing, network security, vulnerability assessment, and ethical hacking methodologies.</p>
+                    <div class="hacking-tagline">
+                        <span class="tagline-icon">🛡️</span>
+                        <span>LEARN TO PROTECT. SECURE THE FUTURE.</span>
+                    </div>
+                    <ul class="hacking-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Network Security & Penetration Testing
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Vulnerability Assessment & Risk Analysis
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Web Application Security
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Hands-on Lab Practice & Certifications
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-cyber">Enroll in Ethical Hacking →</a>
+                </div>
+                <div class="hacking-image">
+                    <div class="hacking-image-frame">
+                        <img src="images/ethical-hacking.png" alt="Ethical Hacking Course">
+                        <div class="hacking-image-glow"></div>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        <span>Security Expert</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>Certified Course</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">हमारी विशेषताएं | Our Features</span>
+                <h2 class="section-title">Why Choose <span class="highlight">Future IT Core?</span></h2>
+                <p class="section-desc">We don't just teach technology — we shape futures.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-name">Expert Faculty</h3>
+                    <p class="feature-hindi">अनुभवी प्रशिक्षक</p>
+                    <p class="feature-desc">Learn from experienced and certified instructors with real-world industry expertise.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M7 8h2m4 0h4M7 12h10"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-name">Practical Training</h3>
+                    <p class="feature-hindi">प्रैक्टिकल ट्रेनिंग</p>
+                    <p class="feature-desc">Hands-on learning with modern computer labs and real-world project-based curriculum.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-name">Certificate Courses</h3>
+                    <p class="feature-hindi">सर्टिफिकेट कोर्स</p>
+                    <p class="feature-desc">Industry-recognized certifications to boost your resume and career prospects.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-name">Better Skills, Better Future</h3>
+                    <p class="feature-hindi">बेहतर स्किल्स, बेहतर भविष्य</p>
+                    <p class="feature-desc">Invest in learning today to unlock unlimited career opportunities tomorrow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header section-header-light">
+                <span class="section-tag section-tag-light">संपर्क करें | Contact Us</span>
+                <h2 class="section-title section-title-light">Get In <span class="highlight">Touch</span></h2>
+                <p class="section-desc section-desc-light">अधिक जानकारी के लिए संपर्क करें — For more information, reach out to us.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <a href="mailto:Contact@futureitcore.com">Contact@futureitcore.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p>Madhotanda, Near HP Petrol Pump</p>
+                            <a href="https://maps.google.com/?q=28.609777,80.123695" target="_blank" rel="noopener">View on Google Maps →</a>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=28.609777,80.123695&z=15&output=embed" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Future IT Core Location">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <h3 class="form-title">Pre-Registration Form</h3>
+                        <p class="form-subtitle">Secure your seat today!</p>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select id="course" name="course" required>
+                                <option value="" disabled selected>Select Course</option>
+                                <option value="basic-computer">Basic Computer</option>
+                                <option value="ms-office">MS Office</option>
+                                <option value="typing">Typing Hindi & English</option>
+                                <option value="internet">Internet & E-Mail</option>
+                                <option value="tally">Tally Prime</option>
+                                <option value="web-design">Web Designing</option>
+                                <option value="dtp-graphic">DTP & Graphic Designing</option>
+                                <option value="ethical-hacking">Ethical Hacking</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-submit">
+                            <span>Submit Pre-Registration</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-future">FUTURE</span>
+                        <span class="logo-it">IT</span>
+                        <span class="logo-core">CORE</span>
+                    </div>
+                    <p class="footer-tagline">Learn Today, Achieve Tomorrow!<br>आज सीखें, कल सफलता पाएं!</p>
+                </div>
+                <div class="footer-links-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#courses">Courses</a>
+                    <a href="#features">Features</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links-section">
+                    <h4>Courses</h4>
+                    <a href="#courses">Basic Computer</a>
+                    <a href="#courses">MS Office</a>
+                    <a href="#ethical-hacking">Ethical Hacking</a>
+                    <a href="#courses">Web Designing</a>
+                </div>
+                <div class="footer-links-section">
+                    <h4>Contact</h4>
+                    <a href="mailto:Contact@futureitcore.com">Contact@futureitcore.com</a>
+                    <a href="https://maps.google.com/?q=28.609777,80.123695" target="_blank">Madhotanda, Near HP Petrol Pump</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Future IT Core. All rights reserved.</p>
+                <p class="footer-motto">🏆 आज सीखें, कल सफलता पाएं! — Learn Today, Achieve Tomorrow!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
